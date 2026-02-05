@@ -1,8 +1,7 @@
 "use client";
 
 import { Button, Input } from "@heroui/react";
-import BTX from "../../../../public/BTX.svg";
-import Image from "next/image";
+import BTXIcon from "../../../../public/BTX.svg";
 import { Controller, useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { authSchema } from "../lib/validation";
@@ -39,7 +38,7 @@ export const AuthForm = () => {
             onSubmit={handleSubmit(onSubmit)}
             className="gap-10 bg-white p-15 max-w-[565px] items-center rounded-4xl shadow mx-auto flex flex-col"
         >
-            <Image src={BTX} alt="Logo" width={100} />
+            <BTXIcon />
 
             <div className="text-center">
                 <p className="text-4xl leading-10 font-semibold mb-5">Панель администратора</p>
